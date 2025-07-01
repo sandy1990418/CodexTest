@@ -1,0 +1,28 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Create a comprehensive definition for the input and output fields required for the SentimentClassifier, including specifications on the type of data being processed as input (like text reviews or feedback) and the expected format for the output (such as sentiment labels or scores).",
+      "fields": [
+        {
+          "prefix": "Text:",
+          "description": "text"
+        },
+        {
+          "prefix": "The following sentiment classification input and output structure:",
+          "description": "sentiment"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.27",
+      "cloudpickle": "3.1"
+    }
+  }
+}
