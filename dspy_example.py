@@ -26,7 +26,9 @@ if __name__ == "__main__":
     ]
 
     # Initialize an LLM (replace with your credentials)
-    llm = dspy.OpenAI(api_key="YOUR_API_KEY")
+    # Newer versions expose OpenAI in the `dspy.llm` submodule.
+    from dspy import llm
+    llm = llm.OpenAI(api_key="YOUR_API_KEY")
 
     # Build the module
     summarizer = Summarizer(llm=llm)
